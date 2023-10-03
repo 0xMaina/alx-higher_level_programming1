@@ -1,7 +1,2 @@
 #!/bin/bash
-if [ -z "$PYFILE" ]; then
-  exit 1
-fi
-
-# Run the Python script specified by PYFILE
 python3 "$PYFILE"
