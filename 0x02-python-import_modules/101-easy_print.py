@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c "print('#pythoniscool')"
+python3 - c "print('#pythoniscool')"
