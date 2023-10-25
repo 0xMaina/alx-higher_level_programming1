@@ -9,6 +9,7 @@ class Square:
     """
     This class defines a square
     """
+
     def __init__(self, size=0):
         """ Creates a new square
         Args:
@@ -35,3 +36,27 @@ class Square:
         Return: square area
         """
         return (self.__size ** 2)
+
+    def __eq__(self, other):
+        """ Compute area of two squares"""
+        return (self.area() == other.area())
+
+    def __ne__(self, other):
+        """ Compute area of two squares"""
+        return (self.area() != other.area())
+
+    def __lt__(self, other):
+        """ Compute area of two squares"""
+        return (self.area() < other.area())
+
+    def __le__(self, other):
+        """ Compute area of two squares"""
+        return (self.area() <= other.area())
+
+    def __gt__(self, other):
+        """ Compute area of two squares"""
+        return (self.area() > other.area())
+
+    def __ge__(self, other):
+        """ Compute area of two squares"""
+        return (self.area() >= other.area())
